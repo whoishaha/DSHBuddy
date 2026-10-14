@@ -35,6 +35,7 @@
     "lib/client.js",
     "lib/types",
     "cordis.patch.yml",
+    "README.zh-CN.md",
     "assets"
   ],
   "scripts": {
