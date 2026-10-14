@@ -1,0 +1,9 @@
+# DSHBuddy profile layer: activate the dshbuddy plugin row (host + client halves).
+# Installed via `dsh plugin --profile web add <plugin-directory>`; the
+# package.json `dsh.bundle.patch` declaration makes this layer join the bundle stack.
+# inject: [webServer] defers apply() until the dsh webserver service is available,
+# so the /api/dshbuddy/* route registration never misses.
+- insert:
+    - id: dshbuddy
+      name: dshbuddy
+      inject: [webServer]

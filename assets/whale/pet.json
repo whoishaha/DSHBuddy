@@ -1,0 +1,6 @@
+{
+  "id": "deepseek-whale",
+  "displayName": "DeepSeek 鲸鱼",
+  "description": "A friendly DeepSeek whale companion for focused work.",
+  "spritesheetPath": "spritesheet.png"
+}
